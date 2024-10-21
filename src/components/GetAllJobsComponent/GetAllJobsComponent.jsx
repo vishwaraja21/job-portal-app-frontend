@@ -8,7 +8,7 @@ const GetAllJobsComponent = () => {
 
   useEffect(() => {
     axios
-    .get('http://localhost:3500/api/v1/jobs')
+    .get('https://job-portal-app-backend.vercel.app/api/v1/jobs')
     .then(response => {
       setJobs(response.data)
     })

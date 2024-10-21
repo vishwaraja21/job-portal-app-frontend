@@ -47,7 +47,7 @@ const EditJobsComponent = () => {
   };
   const positionValidator = () => {
     axios
-      .post(`http://localhost:3500/api/v1/jobs/validate`, {position : jobInfo.position})
+      .post(`https://job-portal-app-backend.vercel.app/api/v1/jobs/validate`, {position : jobInfo.position})
       .then(response => {
         setJobInfo({
           position : response.data.position,

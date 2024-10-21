@@ -52,7 +52,7 @@ const AddNewJobsComponent = () => {
     event.preventDefault()
     
     axios
-      .post(`http://localhost:3500/api/v1/jobs`, jobInfo)
+      .post(`https://job-portal-app-backend.vercel.app/api/v1/jobs`, jobInfo)
       .then(response => {
         alert(`${response.data.position} is added successfully`)
         window.location.href = '/'
