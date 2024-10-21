@@ -69,7 +69,7 @@ const DeleteJobsComponent = () => {
     event.preventDefault()
 
     axios
-      .patch(`http://localhost:3500/api/v1/jobs/`, jobInfo)
+      .delete(`https://job-portal-app-backend.vercel.app/api/v1/jobs/`, jobInfo)
       .then(response => {
         alert(`${jobInfo.position} is deleted successfully`)
         window.location.href = '/'

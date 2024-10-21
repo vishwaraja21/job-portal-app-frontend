@@ -69,7 +69,7 @@ const EditJobsComponent = () => {
     event.preventDefault()
 
     axios
-      .patch(`http://localhost:3500/api/v1/jobs/`, jobInfo)
+      .patch(`https://job-portal-app-backend.vercel.app/api/v1/jobs/`, jobInfo)
       .then(response => {
         alert(`${jobInfo.position} is updated successfully`)
         window.location.href = '/'
